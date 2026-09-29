@@ -1,0 +1,631 @@
+/* ===== BrainBoost Simple UI ===== */
+
+.main {
+    background-color: #f7f9fc;
+}
+
+/* Main title */
+.brainboost-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4f46e5;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.brainboost-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+/* Simple cards */
+.bb-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 15px;
+}
+
+/* Statistics */
+.bb-stat {
+    text-align: center;
+    padding: 15px;
+}
+
+.bb-stat-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4f46e5;
+}
+
+.bb-stat-label {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Question card */
+.question-card {
+    background-color: var(--background-color);
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid var(--secondary-background-color);
+    margin: 15px 0;
+}
+
+.question-number {
+    color: #4f46e5;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.question-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-top: 8px;
+}
+
+/* Subject buttons area */
+.subject-card {
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #f1f3f8;
+}
+
+/* Buttons */
+.stButton > button {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* Small text */
+.bb-muted {
+    color: #777;
+    font-size: 14px;
+}
+
+/* ===== Dashboard Statistics Cards ===== */
+
+div[data-testid="stMetric"] {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+/* --------------------------------------------------
+   BRAINBOOST HEADER
+   -------------------------------------------------- */
+
+.brainboost-header {
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+.brainboost-name {
+    font-size: 40px !important;
+    font-weight: 700;
+    color: #c66d00 !important;
+    margin-bottom: 8px;
+}
+
+.brainboost-tagline {
+    font-size: 16px !important;
+    color: #ffd500 !important;
+}
+
+/* ===== Test Category Buttons ===== */
+
+div[data-testid="stButton"] > button {
+    min-height: 52px;
+    padding: 8px 10px;
+}
+
+/* ==================================================
+   STREAMLIT LIGHT + DARK MODE SUPPORT
+   ================================================== */
+
+/* Main application area */
+[data-testid="stAppViewContainer"] {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Sidebar */
+/* ===== Sidebar / Menu - Light + Dark Mode ===== */
+
+section[data-testid="stSidebar"] {
+    background-color: var(--secondary-background-color) !important;
+}
+
+section[data-testid="stSidebar"] > div:first-child {
+    background-color: var(--secondary-background-color) !important;
+}
+
+section[data-testid="stSidebar"] * {
+    color: var(--text-color);
+}
+
+/* Sidebar radio buttons */
+section[data-testid="stSidebar"] [role="radiogroup"] label {
+    color: var(--text-color) !important;
+}
+
+/* Sidebar welcome text */
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span {
+    color: var(--text-color);
+}
+
+/* BrainBoost header */
+.brainboost-name {
+    color: var(--text-color);
+}
+
+.brainboost-tagline {
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+/* Dashboard / statistic cards */
+div[data-testid="stMetric"] {
+    background-color: var(--secondary-background-color);
+    color: var(--text-color);
+    border: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+div[data-testid="stMetric"] label,
+div[data-testid="stMetric"] [data-testid="stMetricLabel"] {
+    color: var(--text-color) !important;
+    opacity: 0.8;
+}
+
+div[data-testid="stMetric"] [data-testid="stMetricValue"] {
+    color: var(--text-color) !important;
+}
+
+/* Question card */
+.question-card {
+    background-color: var(--secondary-background-color);
+    color: var(--text-color);
+    border: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.question-text {
+    color: var(--text-color);
+}
+
+/* General Streamlit containers */
+[data-testid="stVerticalBlockBorderWrapper"] {
+    border-color: rgba(128, 128, 128, 0.25);
+}
+
+/* ===== Test Answer Options ===== */
+
+div[data-testid="stRadio"] {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    background-color: var(--secondary-background-color);
+}
+
+div[data-testid="stRadio"] label {
+    padding: 5px 0;
+}
+
+/* ===== Question Progress ===== */
+
+.question-progress {
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-color);
+    opacity: 0.75;
+    margin: 8px 0 15px 0;
+}
+
+/* ===== Question Navigation ===== */
+
+.question-nav-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+div[data-testid="stButton"] > button {
+    border-radius: 8px;
+    min-height: 42px;
+}
+
+/* ===== Test Timer ===== */
+
+.test-timer {
+    text-align: center;
+    padding: 10px 15px;
+    margin: 10px 0 15px 0;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    background-color: var(--secondary-background-color);
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* ===== Subject Performance ===== */
+
+.subject-performance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: var(--secondary-background-color);
+    border: 1px solid rgba(128, 128, 128, 0.25);
+}
+
+.subject-performance-name {
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.subject-performance-score {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* LOGIN FORMAT */
+
+.form-heading {
+    margin: 20px 0 28px 0;
+}
+
+.form-title {
+    font-size: 34px;
+    font-weight: 650;
+    margin-bottom: 4px;
+}
+
+.form-subtitle {
+    font-size: 17px;
+    opacity: 0.7;
+}
+
+/* --------------------------------------------------
+   INFO PAGE - HERO
+   -------------------------------------------------- */
+
+.info-hero {
+    text-align: center;
+    padding: 35px 25px;
+    margin: 10px 0 30px 0;
+    background: var(--secondary-background-color);
+    color: var(--text-color);
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 12px;
+}
+
+.info-hero-icon {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.info-hero-title {
+    font-size: 38px;
+    font-weight: 750;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.info-hero-tagline {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.info-hero-description {
+    font-size: 16px;
+    color: var(--text-color);
+    opacity: 0.75;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* --------------------------------------------------
+   INFO PAGE - WHAT IS BRAINBOOST
+   -------------------------------------------------- */
+
+.info-about {
+    padding: 25px;
+    margin: 20px 0;
+    background: var(--secondary-background-color);
+    color: var(--text-color);
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 12px;
+}
+
+.info-about-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.info-about-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+/* --------------------------------------------------
+   INFO PAGE - FEATURES
+   -------------------------------------------------- */
+
+.info-features-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 30px 0 15px 0;
+}
+
+.info-features {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-feature-card {
+    flex: 1;
+    padding: 20px;
+    background: var(--secondary-background-color);
+    color: var(--text-color);
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.info-feature-icon {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.info-feature-title {
+    font-size: 17px;
+    font-weight: 650;
+    margin-bottom: 6px;
+}
+
+.info-feature-text {
+    font-size: 14px;
+    opacity: 0.75;
+    line-height: 1.5;
+}
+
+/* --------------------------------------------------
+   INFO PAGE - AVAILABLE SUBJECTS
+   -------------------------------------------------- */
+
+.info-subjects-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 30px 0 15px 0;
+}
+
+.info-subjects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.info-subject-card {
+    flex: 1 1 160px;
+    padding: 16px;
+    background: var(--secondary-background-color);
+    color: var(--text-color);
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.info-subject-card span {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 7px;
+}
+
+.info-subject-card b {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* --------------------------------------------------
+   INFO PAGE - HOW IT WORKS
+   -------------------------------------------------- */
+
+.info-how-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 30px 0 15px 0;
+}
+
+.info-how {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.info-how-step {
+    flex: 1;
+    padding: 20px 15px;
+    background: var(--secondary-background-color);
+    color: var(--text-color);
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.info-how-number {
+    font-size: 13px;
+    font-weight: 700;
+    opacity: 0.6;
+    margin-bottom: 5px;
+}
+
+.info-how-icon {
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+.info-how-name {
+    font-size: 17px;
+    font-weight: 650;
+    margin-bottom: 6px;
+}
+
+.info-how-text {
+    font-size: 13px;
+    line-height: 1.5;
+    opacity: 0.75;
+}
+
+.info-how-arrow {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* --------------------------------------------------
+   INFO PAGE - QUOTE & FOOTER
+   -------------------------------------------------- */
+
+.info-quote {
+    text-align: center;
+    padding: 25px 20px;
+    margin: 10px 0 20px 0;
+    background: var(--secondary-background-color);
+    color: var(--text-color);
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 12px;
+}
+
+.info-quote-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.info-quote-text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.info-quote-subtext {
+    font-size: 14px;
+    margin-top: 7px;
+    opacity: 0.7;
+}
+
+.info-footer {
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.65;
+    padding: 10px 0 5px 0;
+}
+
+/* --------------------------------------------------
+   INFO PAGE - TECHNOLOGIES & CREATOR
+   -------------------------------------------------- */
+
+.info-tech-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 30px 0 15px 0;
+}
+
+.info-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.info-tech-card {
+    flex: 1 1 150px;
+    padding: 18px 12px;
+    background: var(--secondary-background-color);
+    color: var(--text-color);
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.info-tech-icon {
+    font-size: 28px;
+    margin-bottom: 7px;
+}
+
+.info-tech-name {
+    font-size: 15px;
+    font-weight: 650;
+}
+
+/* --------------------------------------------------
+   INFO PAGE - CREATOR SIGNATURE
+   -------------------------------------------------- */
+
+.info-creator {
+    text-align: center;
+    padding: 20px 10px 5px 10px;
+    margin-top: 15px;
+}
+
+.info-creator-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.info-creator-divider::before,
+.info-creator-divider::after {
+    content: "";
+    width: 90px;
+    height: 1px;
+    background: rgba(128, 128, 128, 0.35);
+}
+
+.info-creator-divider span {
+    font-size: 20px;
+}
+
+.info-creator-text {
+    font-size: 15px;
+    opacity: 0.65;
+    margin-bottom: 4px;
+}
+
+.info-creator-name {
+    font-size: 30px;
+    font-weight: 750;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
